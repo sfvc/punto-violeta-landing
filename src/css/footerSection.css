@@ -1,0 +1,108 @@
+/* .footerSection */
+.footerSection {
+    /* Styles for footerSection can go here if any, like background color or layout */
+  }
+  
+  /* .footerSection__container */
+  .footerSection__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+  
+  /* .footerSection__h1 */
+  .footerSection__h1 {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  /* .footerSection__table */
+  .footerSection__table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: start;
+  }
+  
+  /* .footerSection__table-title */
+  .footerSection__table-title {
+    font-weight: bolder;
+    padding: 10px;
+    color: white;
+    font-size: 3rem;
+    text-align: start;
+  }
+  
+  /* .footerSection__table-cell */
+  .footerSection__table-cell {
+    padding: 10px;
+    vertical-align: top;
+    font-weight: bolder;
+    color: white;
+    font-size: 1rem;
+    text-align: start;
+  }
+  
+  /* .footerSection__table-link */
+  .footerSection__table-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+  }
+  
+  .footerSection__table-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* .footerSection__logo-container */
+  .footerSection__logo-container {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* .footerSection__company-name */
+  .footerSection__company-name {
+    flex: 1;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: flex;
+    align-content: center;
+    justify-content: end;
+  }
+  
+  /* .footerSection__description */
+  .footerSection__description {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  /* .footerSection__description-q */
+  .footerSection__description-q {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  /* .footerSection__copyright */
+  .footerSection__copyright {
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* .footerSection__copyright-small */
+  .footerSection__copyright-small {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  

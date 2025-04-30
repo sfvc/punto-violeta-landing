@@ -1,0 +1,25 @@
+---
+import Footer from '../components/common/footer';
+import Fullpage from './fullPage.astro';
+import Header from './header.astro';
+---
+
+<div
+  style="
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    z-index: 0;
+  "
+  class="BGINICIO"
+></div>
+
+<div class="navfooter">
+  <Header />
+  <Footer />
+</div>
+
+<Fullpage />

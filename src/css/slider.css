@@ -1,0 +1,54 @@
+/* Slider container */
+.slider {
+    width: 100%; /* Adjust width for better fit */
+    height: 100%; /* Maintain height */
+    position: relative;
+  }
+  
+  /* Slider items (individual slides) */
+  .item {
+    position: absolute;
+    width: 60%; /* Keep this as is */
+    height: 100%; /* Keep this as is */
+    text-align: justify;
+    background-color: #ffffffa1;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    left: 20%;
+    bottom: 0%;
+  }
+  
+  /* Next button */
+  #next {
+    position: absolute;
+    right: 20px; /* Adjust for better spacing */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  /* Previous button styles */
+  #prev {
+    position: absolute;
+    left: 20px; /* Adjust for better spacing */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  
+  /* Shared button styles */
+  #prev, #next {
+    color: whitesmoke;
+    background: none;
+    border: none;
+    font-size: 2rem; /* Adjusted for better size */
+    font-family: monospace;
+    font-weight: bold;
+    transition: opacity 0.5s;
+    cursor: pointer;
+  }
+  
+  /* Button hover effect */
+  #prev:hover, #next:hover {
+    opacity: 1;
+  }
+  

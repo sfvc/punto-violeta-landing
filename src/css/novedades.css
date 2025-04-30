@@ -1,0 +1,113 @@
+/* .novedades__grid */
+.novedades__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.novedades__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* .novedades__grid-item */
+  .novedades__grid-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid white;
+    background-color: #ffffff1e;
+    border-radius: 10px;
+  }
+  
+  /* .novedades__grid-item-image */
+  .novedades__grid-item-image {
+    margin-bottom: 15px;
+  }
+  
+  /* img inside .novedades__grid-item-image */
+  .novedades__grid-item-image img {
+    width: 72px;
+  }
+  
+  /* .novedades__grid-item-text */
+  .novedades__grid-item-text {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    color: lightgray; /* Fixed typo 'lightfray' to 'lightgray' */
+    font-weight: 200;
+  }
+  
+  /* .novedades__grid-item-link */
+  .novedades__grid-item-link {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 800;
+  }
+  
+  /* .novedades__grid-item-link-text */
+  .novedades__grid-item-link-text {
+    margin-right: 5px;
+  }
+  
+  /* .novedades__grid-item-link-icon */
+  .novedades__grid-item-link-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .novedades__titulo{
+    font-size: clamp(2rem, 6vw, 4rem);
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .novedades__grid-item-title{
+    font-weight: bolder;
+  }
+
+@media (max-width: 767.98px) {
+  .novedades__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    gap: 4px;
+  }
+
+  .novedades__grid-item-image img{
+    width: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .novedades__grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .novedades__grid-item-image img{
+    width: 75px;
+  }
+
+  .novedades__grid-item-title {
+    font-size: clamp(0.5rem, 4vw, 1.5rem);
+    margin-bottom: 10px;
+  }
+}
+
+@media(min-width: 1024px){
+
+  .novedades__grid-item-title {
+    font-size: clamp(1rem, 4vw, 2rem);
+  }
+}

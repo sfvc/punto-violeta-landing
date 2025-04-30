@@ -1,0 +1,226 @@
+@import url('css/caracteristicas.css');
+@import url('css/carousel.css');
+@import url('css/datos.css');
+@import url('css/footerSection.css');
+@import url('css/mailer.css');
+@import url('css/navfooter.css');
+@import url('css/novedades.css');
+@import url('css/slider.css');
+@import url('css/sponsors.css');
+@import url('css/testimonial.css');
+@import url('css/queEs.css');
+
+:root {
+    --overlay-color: rgba(0, 0, 0, 0.404);
+    --text-shadow: #00305a28;
+  }
+  
+  body {
+    color: whitesmoke;
+    background: #081B85;
+    background: linear-gradient(360deg,rgba(8, 27, 133, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+  }
+  
+  h2{
+    all: unset;
+  }
+  
+  header, footer {
+    padding: 8px 0;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer > nav {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  .section-contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2; /* Keeps content on top of the video */
+    position: relative; /* Add relative positioning to control z-index */
+    margin: 0 auto;
+    max-width: 75dvw;
+    padding: 54px 0;
+  }
+  
+  .section-video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .section-video-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-color);
+    z-index: 1;
+  }
+  
+  .section__galeria {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .section__galeriamarquee {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  #section-video-background__background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the whole container */
+    object-position: center; /* Keeps video centered */
+  }
+  
+  .content {
+    position: relative; /* Ensure content is above the video */
+    z-index: 1; /* Ensures content stays above video */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: white;
+  }
+  
+  p {
+    font-size: 1.25rem;
+  }
+
+  .header-coyuntura__nav{
+    padding: 6px 0px;
+  }
+  
+  @media (max-width: 1023.98px) {
+    .section-contenedor {
+      max-width: 100dvw;
+    }
+  
+    .footer-prueba {
+      width: 100dvw;
+    }
+  }
+  
+  .gridVideo {
+    display: flex;
+    height: 100dvh;
+    width: 100%;
+    padding: 1px;
+    gap: 1px;
+    background-color: rgba(0, 0, 0, 0.50);
+  }
+  
+  .gridVideo__div1, .gridVideo__div3 {
+    display: flex;
+    flex: 1;
+    height: 100%;
+  }
+  
+  .gridVideo__div1 video, .gridVideo__div3 video {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    width: 100%;
+  }
+  
+  .gridVideo__div2 {
+    flex: 2;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+  }
+  
+  .div1 {
+    grid-area: 1 / 1 / 6 / 2;
+  }
+  
+  .div2 {
+    grid-area: 6 / 1 / 9 / 2;
+  }
+  
+  .div3 {
+    grid-area: 1 / 2 / 4 / 3;
+  }
+  
+  .div4 {
+    grid-area: 4 / 2 / 9 / 3;
+  }
+  
+  .div1, .div2, .div3, .div4 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .div1 video, .div2 video, .div3 video, .div4 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    background-position: center;
+    z-index: -1;
+  }
+  
+  .link-screen__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 25;
+    pointer-events: none;
+  }
+  

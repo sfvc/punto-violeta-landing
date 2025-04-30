@@ -1,0 +1,27 @@
+---
+import { GridVideo } from "../components/common/gridvideo";
+const { children, showVideo = false, showGaleria = false } = Astro.props;
+---
+
+<div class="section">
+  {showVideo && (
+    <div class="section-video-background">
+      <video autoplay muted loop id="section-video-background__background-video">
+        <source src="/Nodo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  )}
+
+  {showGaleria && (
+    <div class="section__galeria">
+      <GridVideo client:only="react" />
+    </div>
+  )}
+
+  <div class="section-contenedor">
+    <main>
+      {children}
+    </main>
+  </div>
+</div>
