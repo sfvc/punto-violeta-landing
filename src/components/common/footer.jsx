@@ -71,6 +71,15 @@ const Footer = () => {
                 <div
                     ref={modalRef}  // Attach the ref to the content div
                     className="footer-coyuntura__footer-content"
+                    style={{
+                        display: showGrid ? 'grid' : 'none',  // Show the grid only when showGrid is true
+                        maxHeight: '80dvh',
+                        gridTemplateColumns: 'auto auto auto',
+                        gridTemplateRows: 'auto auto',
+                        gap: '10px',
+                        width: '100%',
+                        padding: '1rem 0px',
+                    }}
                 >
                     {listaItems.map((item, index) => {
                         return (
@@ -91,7 +100,7 @@ const Footer = () => {
 
                     {listaItems.map((item, index) => {
                         return (
-                            <a href="" key={index}>
+                            <a href="https://georefencias.netlify.app/" key={index}>
                                 <img src={item.logo} alt="Map logo" width={24} />
                             </a>
                         );

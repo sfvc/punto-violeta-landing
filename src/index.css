@@ -9,23 +9,27 @@
 @import url('css/sponsors.css');
 @import url('css/testimonial.css');
 @import url('css/queEs.css');
+@import url('css/modal.css');
 
 :root {
     --overlay-color: rgba(0, 0, 0, 0.404);
     --text-shadow: #00305a28;
   }
   
+  button {
+    all: unset;
+    cursor: pointer;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
   body {
     color: whitesmoke;
     background: #081B85;
     background: linear-gradient(360deg,rgba(8, 27, 133, 1) 0%, rgba(0, 212, 255, 1) 100%);
     font-family: 'Poppins', sans-serif;
-  }
-
-  html {
-    scroll-behavior: smooth;
-    height: 100%;
-    width: 100%;
   }
   
   h2{
@@ -56,6 +60,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100dvh;
     z-index: 2; /* Keeps content on top of the video */
     position: relative; /* Add relative positioning to control z-index */
     margin: 0 auto;
@@ -136,6 +141,14 @@
   .header-coyuntura__nav{
     padding: 6px 0px;
   }
+
+  .header-coyuntura__nav-img-deskopt{
+    display: block;
+  }
+
+  .header-coyuntura__nav-img-mobile{
+    display: none;
+  }
   
   @media (max-width: 1023.98px) {
     .section-contenedor {
@@ -144,6 +157,19 @@
   
     .footer-prueba {
       width: 100dvw;
+    }
+
+    .header-coyuntura{
+      width: 100%;
+      padding: 10px 1rem;
+    }
+    
+    .header-coyuntura__nav-img-deskopt{
+      display: none;
+    }
+
+    .header-coyuntura__nav-img-mobile{
+      display: block;
     }
   }
   

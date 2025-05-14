@@ -16,13 +16,13 @@
 }
 
 .que-es__title {
-    font-size: 3vw;
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.5rem);
     margin-bottom: 1rem;
     font-weight: bolder;
 }
 
 .que-es__description {
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1vw + 1rem, 2rem);
     line-height: 1.6;
     color: #fdfdfd;
 }
@@ -41,11 +41,11 @@
 }
 
 .que-es__small{
-    font-size: 1vw;
+    font-size: clamp(0.5rem, 1vw + 1rem, 1rem);
     font-weight: bolder;
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 1023.98px) {
     .que-es {
         flex-direction: column-reverse;
         gap: 10px;
@@ -63,16 +63,8 @@
         padding: 0 10px;
     }
     
-    .que-es__description {
-        font-size: 3.5vw;
-        padding: 0 10px;
-    }
 
     .que-es__image {
         width: 250px;
-    }
-    
-    .que-es__small{
-        font-size: 3.5vw;
     }
 }

@@ -1,0 +1,117 @@
+{
+    "navMobile": {
+      "navDefault": [
+        {
+          "id": 1,
+          "items": [
+            {
+              "id": 2,
+              "titulo": "Municipalidad",
+              "description": "Trámites y Servicios"
+            },
+            {
+              "id": 3,
+              "titulo": "Municipio Abierto"
+            },
+            {
+              "titulo": "Equipo de Gestion",
+              "icon": "",
+              "link": "/EquipoDeGestion"
+            },
+            {
+              "titulo": "Tramites",
+              "icon": "/images/documento.svg",
+              "link": "/categoriasTramites"
+            },
+            {
+              "titulo": "Contacto",
+              "icon": "/images/mail.svg",
+              "link": "https://mail.google.com/mail/?view=cm&fs=1&to=info@catamarcaciudad.gob.ar",
+              "external":true
+            }
+          ]
+        }
+      ],
+      "navSecond": [
+        {
+          "titulo": "Intendente",
+          "link": "/Intendente"
+        },
+        {
+          "titulo": "Radio Municipal",
+          "link": "/radio"
+        },
+        {
+          "titulo": "Valores",
+          "link": "/perfil/3"
+        },
+        {
+          "titulo": "Reseña Histórica",
+          "link": "/perfil/4"
+        },
+        {
+          "titulo": "Simbología",
+          "link": "/perfil/5"
+        },
+        {
+          "volver": 1,
+          "titulo": "Volver",
+          "icon": "/images/volver.svg"
+        }
+      ],
+      "navThird": [
+        {
+            "titulo": "Sistema de Fiscalizacion de Obras",
+            "link": "http://190.228.16.215:90/fiscalizacion/form_login.php",
+            "external": true
+        },
+        {
+            "titulo": "Turnos Online",
+            "link": "https://turnos.catamarcacapital.gob.ar/",
+            "external": true
+        },
+        {
+            "titulo": "Metas",
+            "link": "https://metas.catamarcacapital.gob.ar/",
+            "external": true
+        },
+        {
+            "titulo": "Punto Giro",
+            "link": "https://giro.catamarcacapital.gob.ar/",
+            "external": true
+        },
+        {
+            "titulo": "Nodo Tecnologico",
+            "link": "https://nodotecnologico.com.ar/",
+            "external": true
+        },
+        {
+            "titulo": "Sfvc Turismo",
+            "link": "https://sfvc.tur.ar/",
+            "external": true
+        },
+        {
+            "titulo": "Vamos en Bici",
+            "link": "https://vamosenbici.smod.io/",
+            "external": true
+        },
+        {
+            "titulo": "Qmx - QuienxMi",
+            "link": "https://catamarca.qxm.com.ar/",
+            "external": true
+        },
+        {
+            "titulo": "Cerca",
+            "link": "https://play.google.com/store/apps/details?id=com.munidigital.catamarca&hl=es_AR",
+            "external": true
+        },
+      
+        {
+          "volver": 1,
+          "titulo": "Volver",
+          "icon": "/images/volver.svg"
+        }
+      ]
+    }
+  }
+  
