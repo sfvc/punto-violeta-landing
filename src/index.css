@@ -28,7 +28,7 @@
   body {
     color: whitesmoke;
     background: #081B85;
-    background: linear-gradient(360deg,rgba(8, 27, 133, 1) 0%, rgba(0, 212, 255, 1) 100%);
+    background: linear-gradient(360deg,#2c002a 0%, #a00188 100%);
     font-family: 'Poppins', sans-serif;
   }
   
