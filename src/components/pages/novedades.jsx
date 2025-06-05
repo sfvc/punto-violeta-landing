@@ -11,9 +11,6 @@ const Novedades = () => {
           <NovedadesItem/>
           <NovedadesItem/>
           <NovedadesItem/>
-          <NovedadesItem/>
-          <NovedadesItem/>
-          <NovedadesItem/>
           
         </div>
       </div>

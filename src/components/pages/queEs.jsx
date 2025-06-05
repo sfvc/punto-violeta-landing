@@ -16,7 +16,7 @@ const QueEs = () => {
                 </div>
                 <div className="que-es__image-container">
                     <img 
-                        src="/logo-giro.svg" 
+                        src="/puntovioletawe.png" 
                         alt="Logo Punto Violeta" 
                         className="que-es__image" 
                     />
